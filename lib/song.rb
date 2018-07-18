@@ -10,8 +10,8 @@ class Song
 
   def save
     #why do you need the .class next to the self? why can't you just go @all << self?
-    #self.class.all << self
-    @@all << self
+    self.class.all << self
+    #@@all << self will have the same result
   end
 
 
